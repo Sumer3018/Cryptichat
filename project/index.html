@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptiChat</title>
+
+    <script>
+      // This script runs before React and Supabase initialize.
+      // It checks if the URL contains a confirmation token from a Supabase signup.
+      if (
+        window.location.hash.includes('access_token') &&
+        window.location.hash.includes('type=signup')
+      ) {
+        // If it's a signup confirmation, we prevent the auto-login.
+        // We immediately replace the URL in the browser's history to point to
+        // our 'congratulations' page and, crucially, we remove the hash containing the tokens.
+        // By the time the React app loads, the URL is clean.
+        window.history.replaceState(null, '', '/confirmed');
+      }
+    </script>
+    </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
