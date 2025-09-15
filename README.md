@@ -23,7 +23,7 @@
 A secure, real-time messaging application featuring a unique hybrid security model of end-to-end encryption and steganography.
 
 <div align="center">
-  <img src="image.png" alt="StegaCrypt Chat Demo" width="800">
+  <img src="project/assets/image.png" alt="StegaCrypt Chat Demo" width="400" height = "400">
 </div>
 
 ## About The Project
