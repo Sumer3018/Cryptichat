@@ -83,8 +83,7 @@ To get a local copy up and running, follow these simple steps.
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/your-username/StegaCrypt-Chat.git](https://github.com/your-username/StegaCrypt-Chat.git)
-    cd StegaCrypt-Chat
+    git clone [https://github.com/Sumer3018/Cryptichat]
     ```
 
 2.  **Install NPM packages:**
